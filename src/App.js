@@ -1,10 +1,16 @@
 import React from "react";
+import { Router } from "@reach/router";
+import HomePage from "./views/Home";
+import AuthPage from "./views/Auth";
 
 function App() {
-  return (
-    <div className="h-screen flex items-center justify-center">
-      <div>Hello</div>
-    </div>
+  const user = "";
+  return user ? (
+    <HomePage path="/home" />
+  ) : (
+    <Router>
+      <AuthPage path="/" />
+    </Router>
   );
 }
 
