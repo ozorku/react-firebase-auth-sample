@@ -1,7 +1,11 @@
 import React from "react";
 
 function App() {
-  return <div className="bg-blue-400 h-screen">Hello world</div>;
+  return (
+    <div className="h-screen flex items-center justify-center">
+      <div>Hello</div>
+    </div>
+  );
 }
 
 export default App;
